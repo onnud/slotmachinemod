@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "slotmachinemod",
+	"version": "${version}",
+	"name": "SlotMachineMod",
+	"description": "Gamble ur shit to get more shit",
+	"authors": [
+		"Yeah"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/slotmachinemod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.dukino.slotmachinemod.SlotMachineMod"
+		],
+		"fabric-datagen": [
+			"net.dukino.slotmachinemod.SlotMachineModDataGenerator"
+		],
+		"client": [
+			"net.dukino.slotmachinemod.SlotMachineModClient"
+		]
+	},
+	"mixins": [
+		"slotmachinemod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
